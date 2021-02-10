@@ -1,4 +1,4 @@
-Problem Statement:
+Problem Statement.
 Implement a parser program in Java to automate counting cache misses. The input Java test cases allow for loop nests and up to 3D array references. You need to parse the .java file, collect the
 necessary information, and report the cache misses for each array in each test.
 You will use a popular top-down (LL) parser called ANTLR. The restricted grammar to parse the test cases is provided in a file called LoopNest.g4. You should not need to change the grammar. You can use the following instructions to generate the lexer, parser, and the syntax analysis template. Extend the necessary callbacks in Analysis.java to implement your analysis.
@@ -29,24 +29,24 @@ You will create such maps for all test cases and collect them in a List<HashMap<
 After going through all the test cases, you will serialize this object into a file Results.obj. The
 name of the file must be Results.obj. We have included a serialization wrapper in Analysis.java
 (search for FIXME:).
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+____________________________________________________________________
 Assumptions
 • There are two special variables: cachePower will contain the size of the cache and blockPower
 indicates the size of a cache block. The cache and block sizes are specified in powers of two,
-i.e., a size of k indicates that the total cache size is 2k Bytes.
+i.e., a size of k indicates that the total cache size is 2k Bytes.__
 • There will be only one variable cacheType of type String in a test case. Its values can be any
-of FullyAssociative, SetAssociative, and DirectMapped.
+of FullyAssociative, SetAssociative, and DirectMapped.__
 • You can assume that the input test methods will be syntactically valid Java snippets. You
-need not do any error checking in your implementation.
-• In all the for loops, the lower bound will always start from 0.
-• There will be at most 3 dimensions for any array.
-• Array dimensions will always be a power of 2.
+need not do any error checking in your implementation.__
+• In all the for loops, the lower bound will always start from 0.__
+• There will be at most 3 dimensions for any array.__
+• Array dimensions will always be a power of 2.__
 Evaluation The output format should be strictly followed since we will use automated scripts to
 evaluate the submissions. The scripts will call your program as follows.
 java Driver Testcases.t
 where Testcases.t is a file provided as a command line argument and will contain one or more
-test cases.
+test cases.__
 ANTLR Resources Feel free to browse through additional ANTLR material on the Internet.
-• https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
-• Tutorial 1: https://www.baeldung.com/java-antlr
-• Tutorial 2: https://tomassetti.me/antlr-mega-tutorial/
+• https://github.com/antlr/antlr4/blob/master/doc/getting-started.md__
+• Tutorial 1: https://www.baeldung.com/java-antlr__
+• Tutorial 2: https://tomassetti.me/antlr-mega-tutorial/__

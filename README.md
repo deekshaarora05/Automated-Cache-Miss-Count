@@ -34,20 +34,29 @@ ____________________________________________________________________
 Assumptions
 • There are two special variables: cachePower will contain the size of the cache and blockPower
 indicates the size of a cache block. The cache and block sizes are specified in powers of two,
-i.e., a size of k indicates that the total cache size is 2k Bytes.__
+i.e., a size of k indicates that the total cache size is 2k Bytes.
+
 • There will be only one variable cacheType of type String in a test case. Its values can be any
-of FullyAssociative, SetAssociative, and DirectMapped.__
+of FullyAssociative, SetAssociative, and DirectMapped.
+
 • You can assume that the input test methods will be syntactically valid Java snippets. You
-need not do any error checking in your implementation.__
-• In all the for loops, the lower bound will always start from 0.__
-• There will be at most 3 dimensions for any array.__
-• Array dimensions will always be a power of 2.__
+need not do any error checking in your implementation.
+
+• In all the for loops, the lower bound will always start from 0.
+
+• There will be at most 3 dimensions for any array.
+
+• Array dimensions will always be a power of 2.
+
 Evaluation The output format should be strictly followed since we will use automated scripts to
 evaluate the submissions. The scripts will call your program as follows.
 java Driver Testcases.t
 where Testcases.t is a file provided as a command line argument and will contain one or more
-test cases.__
+test cases.
+
 ANTLR Resources Feel free to browse through additional ANTLR material on the Internet.
-• https://github.com/antlr/antlr4/blob/master/doc/getting-started.md__
-• Tutorial 1: https://www.baeldung.com/java-antlr__
-• Tutorial 2: https://tomassetti.me/antlr-mega-tutorial/__
+• https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
+
+• Tutorial 1: https://www.baeldung.com/java-antlr
+
+• Tutorial 2: https://tomassetti.me/antlr-mega-tutorial/

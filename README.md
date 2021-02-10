@@ -32,6 +32,7 @@ name of the file must be Results.obj. We have included a serialization wrapper i
 (search for FIXME:).
 ____________________________________________________________________
 Assumptions
+
 • There are two special variables: cachePower will contain the size of the cache and blockPower
 indicates the size of a cache block. The cache and block sizes are specified in powers of two,
 i.e., a size of k indicates that the total cache size is 2k Bytes.
